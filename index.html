@@ -30,6 +30,13 @@
     a:hover {
       text-decoration: underline;
     }
+    .highlight {
+      background: #f0eeff;
+      border-left: 4px solid #6C63FF;
+      padding: 12px 16px;
+      border-radius: 0 10px 10px 0;
+      margin: 12px 0;
+    }
   </style>
 </head>
 <body>
@@ -47,61 +54,143 @@
     <h2>2. Allgemeines zur Datenverarbeitung</h2>
     <p>
       Die App BrainPaws verarbeitet personenbezogene Daten nur insoweit, wie dies für die Bereitstellung
-      der Funktionen der App erforderlich ist.
+      der Funktionen der App erforderlich ist. Nachfolgend wird erläutert, welche Daten zu welchem Zweck
+      verarbeitet werden.
     </p>
 
     <h2>3. Lokal gespeicherte Daten</h2>
-    <p>BrainPaws speichert Daten lokal auf dem Gerät des Nutzers, insbesondere:</p>
+    <p>BrainPaws speichert folgende Daten lokal auf dem Gerät des Nutzers:</p>
     <ul>
-      <li>Hundeprofile</li>
-      <li>Trainingsfortschritte</li>
+      <li>Hundeprofile (Name, optional Profilbild)</li>
+      <li>Trainingsfortschritte, Bewertungen und Einträge</li>
       <li>Punkte, Freischaltungen und Streaks</li>
-      <li>individuelle Einstellungen</li>
-      <li>optional ausgewählte Bilder für Hundeprofile</li>
+      <li>Individuelle Einstellungen (Sprache, Benachrichtigungen)</li>
+      <li>Optional ausgewählte Bilder für Hundeprofile</li>
     </ul>
     <p>
-      Diese Daten werden nicht automatisch an externe Server übertragen.
+      Diese Daten werden ausschließlich lokal auf dem Gerät gespeichert und nicht automatisch
+      an externe Server übertragen.
     </p>
 
-    <h2>4. In-App-Käufe</h2>
+    <h2>4. Firebase-Dienste (Google)</h2>
+    <div class="highlight">
+      BrainPaws verwendet Dienste von Google Firebase. Dabei können Daten an Server von
+      Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA übertragen werden.
+    </div>
+
+    <h3>4.1 Firebase Analytics</h3>
+    <p>
+      BrainPaws verwendet Firebase Analytics zur anonymisierten Analyse der App-Nutzung.
+      Dabei werden unter anderem folgende Daten erfasst:
+    </p>
+    <ul>
+      <li>Anonymisierte Nutzungsereignisse (z. B. aufgerufene Screens)</li>
+      <li>Geräteinformationen (Modell, Betriebssystemversion)</li>
+      <li>Sitzungsdauer und -häufigkeit</li>
+      <li>Eine anonymisierte Instanz-ID</li>
+    </ul>
+    <p>
+      Es werden keine Namen, E-Mail-Adressen oder andere direkt personenidentifizierbare
+      Daten an Firebase Analytics übermittelt. Die Daten dienen ausschließlich der
+      Verbesserung der App-Qualität und -Stabilität.
+    </p>
+    <p>
+      Weitere Informationen: <a href="https://firebase.google.com/support/privacy" target="_blank">
+      firebase.google.com/support/privacy</a>
+    </p>
+
+    <h3>4.2 Firebase Crashlytics</h3>
+    <p>
+      BrainPaws verwendet Firebase Crashlytics zur automatischen Erkennung und Analyse von
+      App-Abstürzen. Im Fehlerfall werden folgende Daten übermittelt:
+    </p>
+    <ul>
+      <li>Stack Traces und Fehlermeldungen zum Zeitpunkt des Absturzes</li>
+      <li>Geräteinformationen (Modell, Betriebssystem, App-Version)</li>
+      <li>Eine anonymisierte Instanz-ID</li>
+      <li>Uhrzeit des Absturzes</li>
+    </ul>
+    <p>
+      Diese Daten werden ausschließlich zur Fehlerbehebung genutzt und enthalten keine
+      Trainingsdaten, Hundeprofile oder sonstige nutzerspezifische Inhalte.
+    </p>
+    <p>
+      Weitere Informationen: <a href="https://firebase.google.com/products/crashlytics" target="_blank">
+      firebase.google.com/products/crashlytics</a>
+    </p>
+
+    <p>
+      Die Nutzung von Firebase-Diensten erfolgt auf Grundlage des berechtigten Interesses
+      gemäß Art. 6 Abs. 1 lit. f DSGVO an der Bereitstellung einer stabilen und
+      nutzerfreundlichen App. Google LLC ist unter dem EU-US Data Privacy Framework
+      zertifiziert, womit ein angemessenes Datenschutzniveau gewährleistet wird.
+    </p>
+
+    <h2>5. In-App-Käufe</h2>
     <p>
       BrainPaws bietet optionale kostenpflichtige Abonnements (BrainPaws Journey) an.
-      Die Abwicklung von Zahlungen erfolgt ausschließlich über die jeweilige Plattform
-      (Google Play Store bzw. Apple App Store). BrainPaws selbst verarbeitet keine
-      Zahlungsdaten. Es gelten die Datenschutzbestimmungen von Google bzw. Apple.
+      Die Abwicklung von Zahlungen erfolgt ausschließlich über den Google Play Store.
+      BrainPaws selbst verarbeitet keine Zahlungsdaten. Es gelten die
+      <a href="https://policies.google.com/privacy" target="_blank">Datenschutzbestimmungen von Google</a>.
     </p>
 
-    <h2>5. Zugriff auf Fotos / Medien</h2>
+    <h2>6. Zugriff auf Fotos / Medien</h2>
     <p>
-      Wenn Nutzer ein Bild für ein Hundeprofil auswählen, greift BrainPaws nur nach ausdrücklicher Auswahl
-      durch den Nutzer auf die entsprechenden Mediendaten des Geräts zu.
+      Wenn Nutzer ein Bild für ein Hundeprofil auswählen, greift BrainPaws nur nach
+      ausdrücklicher Auswahl durch den Nutzer auf die entsprechenden Mediendaten des
+      Geräts zu. Das Bild wird ausschließlich lokal in der App gespeichert.
     </p>
 
-    <h2>6. Keine automatische Weitergabe an Dritte</h2>
+    <h2>7. Push-Benachrichtigungen</h2>
     <p>
-      Nach aktuellem Stand werden durch BrainPaws keine personenbezogenen Daten automatisiert an Dritte,
-      externe Analyseanbieter oder Werbenetzwerke weitergegeben.
+      BrainPaws kann optionale lokale Push-Benachrichtigungen senden (z. B. Streak-Erinnerungen).
+      Diese werden lokal auf dem Gerät geplant und erfordern keine Übertragung von Daten
+      an externe Server. Die Benachrichtigungen können jederzeit in den Geräteeinstellungen
+      deaktiviert werden.
     </p>
 
-    <h2>7. Kontaktaufnahme</h2>
+    <h2>8. Keine Weitergabe an Werbenetzwerke</h2>
     <p>
-      Bei Fragen zum Datenschutz kann die Kontaktaufnahme per E-Mail erfolgen an:
+      BrainPaws gibt keine personenbezogenen Daten an Werbenetzwerke, Social-Media-Plattformen
+      oder sonstige kommerzielle Dritte weiter. Die App enthält keine Werbung.
+    </p>
+
+    <h2>9. Kontaktaufnahme</h2>
+    <p>
+      Bei Fragen zum Datenschutz kann die Kontaktaufnahme per E-Mail erfolgen:<br>
       <a href="mailto:dominic_schaffarczyk@web.de">dominic_schaffarczyk@web.de</a>
     </p>
 
-    <h2>8. Rechte der betroffenen Personen</h2>
+    <h2>10. Rechte der betroffenen Personen</h2>
     <p>
-      Nutzer haben im Rahmen der geltenden gesetzlichen Vorschriften insbesondere das Recht auf Auskunft,
-      Berichtigung, Löschung und Einschränkung der Verarbeitung personenbezogener Daten.
+      Nutzer haben im Rahmen der geltenden gesetzlichen Vorschriften insbesondere folgende Rechte:
+    </p>
+    <ul>
+      <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+      <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+      <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+      <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+      <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+      <li>Recht auf Widerspruch (Art. 21 DSGVO)</li>
+    </ul>
+    <p>
+      Zur Ausübung dieser Rechte genügt eine formlose E-Mail an die oben genannte Adresse.
     </p>
 
-    <h2>9. Änderungen dieser Datenschutzerklärung</h2>
+    <h2>11. Beschwerderecht</h2>
     <p>
-      Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen oder rechtliche Anforderungen ändern.
+      Nutzer haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
+      Die zuständige Behörde richtet sich nach dem Wohnsitz des Nutzers.
+    </p>
+
+    <h2>12. Änderungen dieser Datenschutzerklärung</h2>
+    <p>
+      Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen oder
+      rechtliche Anforderungen ändern. Die aktuelle Version ist stets unter der in der
+      App verlinkten URL abrufbar.
     </p>
 
     <p><strong>Stand:</strong> März 2026</p>
   </div>
 </body>
 </html>
-   
